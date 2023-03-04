@@ -19,6 +19,8 @@ def spot():
 def rest():
     return render_template("rest.html")
 
+# 一覧ページを返す
+
 @app.route("/food/<int:grp_flg>")
 def foodList(grp_flg):
 
@@ -96,6 +98,7 @@ def spotList(grp_flg):
         place_img_ent3 = place_img_ent3
         )
 
+# 詳細ページを返す
 
 @app.route("/detail/<int:id>")
 def detail(id):
